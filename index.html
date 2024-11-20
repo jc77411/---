@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>明朝人物志</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/theme-classic.css">
+    <link rel="stylesheet" href="styles/biography-modal.css">
+</head>
+<body>
+    <header>
+        <h1>明朝人物志</h1>
+        <nav id="timeline-nav">
+            <!-- 时间线导航将通过JS生成 -->
+        </nav>
+    </header>
+    
+    <main>
+        <div id="dynasty-periods">
+            <!-- 朝代内容将通过JS生成 -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 明朝人物志</p>
+    </footer>
+
+    <script src="scripts/characters-data.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/generate-pages.js"></script>
+    <script src="scripts/biography-modal.js"></script>
+
+    <script>
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            generateTimeline();
+            generateCharacterCards();
+        });
+    </script>
+</body>
+</html> 
